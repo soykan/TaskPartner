@@ -27,7 +27,7 @@ public class UserService {
 		authorities.add(authority);
 		
 		User user = new User(username, password, authorities);
-		userRepository.save(user);
+		user = userRepository.save(user);
 		return user;
 	}
 }
